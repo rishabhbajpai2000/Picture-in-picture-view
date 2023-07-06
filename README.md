@@ -1,16 +1,9 @@
-# for_testing
+# changes that were made in raw_pip_view
+- it now accepts a parameter for starting minimised: startMinimized
+- the value of  _toggleFloatingAnimationController in init function depends on startMinimized parameter. 
+- added onTapTopWidget function
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# problem: 
+- the floating window when maximised is not able to minimise it self by tapping the picture_in_picture icon on top right corner. 
+- we need to call onTapTopWidget function of raw_pip_view from onTap parameter of picture_in_picture icon. 
